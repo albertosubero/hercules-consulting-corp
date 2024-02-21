@@ -1,0 +1,43 @@
+<nav>
+  <div class="container">
+    <div class="mobile-menu-icon desktop-hidden" (click)="mobileMenuIsOpen = true">
+      <img src="assets/images/menu-burger-horizontal.svg">
+    </div>
+    <div class="logo">
+      <img src="assets/images/hercules-light-logo.svg" alt="Hercules Consulting">
+    </div>
+    <ul class="top-menu mobile-hidden">
+      <li routerLink="" routerLinkActive="active">Inicio</li>
+      <li routerLink="services" routerLinkActive="active">Servicios</li>
+      <li>Formación</li>
+      <li>Reclutamiento</li>
+      <li>Sobre nosotros</li>
+      <li>Contacto</li>
+    </ul>
+    <div class="right-actions">
+      <div class="lang-selector mobile-hidden">
+        <img src="assets/images/icon-spain-flag.svg">
+      </div>
+      <button class="btn light outline header-btn">Solicitar un presupuesto</button>
+    </div>
+  </div>
+</nav>
+
+@if (mobileMenuIsOpen) {
+  <div class="mobile-menu-list desktop-hidden">
+    <ul>
+      <li class="active">Inicio</li>
+      <li>Servicios</li>
+      <li>Formación</li>
+      <li>Reclutamiento</li>
+      <li>Sobre nosotros</li>
+      <li>Contacto</li>
+    </ul>
+    <div class="right-actions">
+      <div class="lang-selector">
+        <img src="assets/images/icon-spain-flag.svg">
+      </div>
+      <button class="btn light outline header-btn">Solicitar un presupuesto</button>
+    </div>
+  </div>
+}

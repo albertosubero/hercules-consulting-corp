@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  &.dark {
+    background-color: #001429;
+    color: #ffffff;
+  }
+  &.light {
+    color: #232647;
+    p {
+      color: #616161;
+    }
+  }
+}
+
+.hr-separator {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  .half-col {
+    flex-basis: 50%;
+    &.d-flex{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      @media (max-width: 992px) {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  .three-col {
+    flex-basis: 33.33%;
+  }
+  &.row {
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.carousel-wrapper {
+  display: block;
+  text-align: center;
+  h2 {
+    font-size: 30px;
+  }
+}
+
+button {
+  font-family: "Poppins", sans-serif !important;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  &.btn {
+    &.accent {
+      background-color: #04E3FF;
+      color: #001429;
+    }
+    &.light {
+      color: #ffffff;
+    }
+    &.outline {
+      background-color: transparent;
+      border: 1px solid;
+    }
+  }
+  &.lg-btn {
+    width: 326px;
+    height: 58px;
+    border-radius: 326px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &.header-btn {
+    font-size: 14px;
+    height: 46px;
+    width: 224px;
+    border-radius: 224px;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0 0 19px;
+  .accent-color {
+    color: #04E3FF;
+    font-weight: 900;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  margin: 0 0 15px;
+  .accent-color {
+    color: #04E3FF;
+    font-weight: 500;
+  }
+}
+
+p {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.icon-link {
+  color: #04E3FF;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  img {
+    margin-right: 15px;
+  }
+}
+
+.mobile-hidden {
+  @media (max-width: 992px) {
+    display: none !important;
+  }
+}
+
+.desktop-hidden {
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}

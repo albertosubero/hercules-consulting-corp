@@ -1,0 +1,25 @@
+#section-00 {
+  button {
+    margin-top: 40px;
+  }
+}
+
+#section-01 {
+  padding: 47px 0;
+  .icon-link {
+    margin-top: 24px;
+  }
+  #company-values {
+    h2 {
+      max-width: 945px;
+      text-align: center;
+      margin: 94px auto 45px auto;
+    }
+  }
+}
+
+.gradient-dark-card {
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,31,65,1) 100%);
+  border-radius: 20px
+}
