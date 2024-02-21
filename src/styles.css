@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 body {
   margin: 0;
@@ -18,12 +19,6 @@ section {
       color: #616161;
     }
   }
-}
-
-.hr-separator {
-  max-width: 1366px;
-  margin: 0 auto;
-  display: block;
 }
 
 .container {
@@ -54,6 +49,12 @@ section {
   }
 }
 
+.hr-separator {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: block;
+}
+
 .carousel-wrapper {
   display: block;
   text-align: center;
@@ -74,6 +75,7 @@ button {
   cursor: pointer;
   font-family: inherit;
   border: none;
+  height: 58px;
   &.btn {
     &.accent {
       background-color: #04E3FF;
@@ -89,8 +91,14 @@ button {
   }
   &.lg-btn {
     width: 326px;
-    height: 58px;
     border-radius: 326px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &.md-btn {
+    width: 218px;
+    border-radius: 218px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 16px;
@@ -126,6 +134,10 @@ p {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   margin: 0;
+}
+
+.accent-color {
+  color: #04E3FF !important;
 }
 
 .icon-link {

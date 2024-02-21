@@ -60,6 +60,61 @@
   }
 }
 
+#section-03 {
+  padding: 47px 0;
+  #company-entrepreneurs {
+    h2 {
+      max-width: 800px;
+      text-align: center;
+      margin: 0 auto 90px auto;
+    }
+  }
+  #company-entrepreneurs-carousel {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 0 75px;
+    box-sizing: border-box;
+    .carousel-slide-wrapper {
+      width: 100%;
+      max-width: 370px;
+      border-radius: 20px;
+      padding: 34px 50px 50px;
+      box-sizing: border-box;
+      margin: auto;
+      background-image: url('/assets/images/hc-pattner.png');
+      background-color: #001F41;
+      .cursive {
+        font-family: "Alex Brush", cursive;
+        font-size: 60px;
+        margin-top: -40px;
+      }
+      .formation  {
+        font-size: 48px;
+        font-weight: 500;
+        margin-top: -20px;
+        text-transform: uppercase;
+      }
+      .skill-box {
+        color: #001429;
+        background-color: #ffffff;
+        font-size: 40px;
+        font-weight: 800;
+        border-radius: 0 20px;
+        margin-left: -50px;
+        width: calc(100% + 100px);
+      }
+      .position {
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 16px;
+      }    
+      button {
+        margin-top: 38px;
+      }
+    }
+  }
+}
+
 .gradient-dark-card {
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,31,65,1) 100%);
