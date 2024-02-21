@@ -1,3 +1,7 @@
+section {
+  padding: 47px 0;
+}
+
 #section-00 {
   button {
     margin-top: 40px;
@@ -5,7 +9,6 @@
 }
 
 #section-01 {
-  padding: 47px 0;
   .icon-link {
     margin-top: 24px;
   }
@@ -26,7 +29,6 @@
 }
 
 #section-02 {
-  padding: 47px 0;
   #company-testimonials {
     h2 {
       max-width: 800px;
@@ -61,7 +63,6 @@
 }
 
 #section-03 {
-  padding: 47px 0;
   #company-entrepreneurs {
     h2 {
       max-width: 800px;
@@ -110,6 +111,59 @@
       }    
       button {
         margin-top: 38px;
+      }
+    }
+  }
+}
+
+#section-04 {
+  padding-bottom: 90px;
+  #company-articles {
+    h2 {
+      max-width: 800px;
+      text-align: center;
+      margin: 45px auto 90px auto;
+    }
+  }
+  #company-articles-carousel {
+    .carousel-slide-wrapper {
+      width: 100%;
+      max-width: 412px;
+      .article-data {
+        padding: 0 12px;
+      }
+      .article-date {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: start;
+        color: #616161;
+        font-size: 14px;
+        margin-top: 25px;
+        .date-icon {
+          margin: 0 9px 0 0;
+        }
+      }
+      p {
+        text-align: left;
+        color: #616161;
+        font-size: 16px;
+        &.article-title {
+          color: #232647;
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 20px;
+          margin-bottom: 12px;
+        }
+      }
+      .see-more  {
+        display: flex;
+        color: #232647;
+        font-weight: 700;
+        margin-top: 12px;
+        cursor: pointer;
+        img {
+          margin: 0 0 0 12px;
+        }
       }
     }
   }
