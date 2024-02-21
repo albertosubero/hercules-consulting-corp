@@ -25,6 +25,41 @@
   }
 }
 
+#section-02 {
+  padding: 47px 0;
+  #company-testimonials {
+    h2 {
+      max-width: 800px;
+      text-align: center;
+      margin: 94px auto 45px auto;
+    }
+  }
+  #company-testimonials-carousel {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 0 75px;
+    box-sizing: border-box;
+    .carousel-slide-wrapper {
+      width: 100%;
+      max-width: 280px;
+      margin: auto;
+      .quote-icon {
+        margin-top: 24px;
+        margin-bottom: 6px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        &.testimonial-name {
+          font-size: 16px;
+          font-weight: 600;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
 .gradient-dark-card {
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,31,65,1) 100%);

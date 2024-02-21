@@ -26,8 +26,8 @@ export class HomeViewComponent {
       400: {
         items: 2
       },
-      740: {
-        items: 3
+      992: {
+        items: 4
       },
     },
     nav: true
