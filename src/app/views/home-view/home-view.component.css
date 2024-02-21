@@ -16,6 +16,13 @@
       margin: 94px auto 45px auto;
     }
   }
+  #company-values-carousel {
+    .carousel-slide-wrapper {
+      width: 100%;
+      max-width: 310px;
+      margin: auto;
+    }
+  }
 }
 
 .gradient-dark-card {

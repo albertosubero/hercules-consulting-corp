@@ -60,6 +60,13 @@ section {
   h2 {
     font-size: 30px;
   }
+  img {
+    &.auto-img {
+      width: auto;
+      height: auto;
+      margin: auto;
+    }
+  }
 }
 
 button {
