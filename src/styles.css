@@ -23,6 +23,9 @@ section {
   &.gray {
     background-color: #F6F6F6;
   }
+  .icon-link {
+    margin-top: 24px;
+  }
 }
 
 .container {
@@ -152,6 +155,9 @@ p {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   margin: 0;
+  &.p-md {
+    font-size: 16px;
+  }
 }
 
 a  {
