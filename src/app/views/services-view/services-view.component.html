@@ -90,3 +90,19 @@
     </div>
   </div>
 </section>
+<!-- #Section 07 -->
+<section id="section-07" class="light gray">
+  <div id="company-clients-videos" class="container">
+    <h2 class="section-title">Lo que dicen nuestros <i class="accent-color">clientes satisfechos</i></h2>
+  </div>
+  <div class="container row text-center" style="flex-wrap: wrap;">
+    @for (video of reviewsVideosData.slice(0, videosLimit); track video.id) {
+      <div class="four-col">
+        <iframe class="video-wrapper" width="95%" height="315" [src]="video.url | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    }
+  </div>
+  <div class="container" style="justify-content: center;">
+    <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">Ver más reseñas</button>
+  </div>
+</section>
