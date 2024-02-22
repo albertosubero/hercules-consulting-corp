@@ -1,0 +1,16 @@
+<div class="container">
+  @for (product of data.slice(0, limit); track product.id) {
+    <div class="four-col">
+      <div class="card-wrapper">
+        <img class="card-img" width="100%" height="auto" [src]="'assets/images/' + product.img">
+        <div class="card-info">
+          <p>{{ product.description }}</p>
+          <button class="btn accent-color sm-btn outline">Comprar formación</button>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+<div class="container" style="justify-content: center;">
+  <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="limit < data.length ? limit = limit + 4 : limit = data.length">Ver más formaciones</button>
+</div>

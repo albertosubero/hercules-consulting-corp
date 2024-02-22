@@ -1,4 +1,7 @@
 section {
+  h2.section-title {
+    margin: 45px auto 90px auto;
+  }
   &.gradient {
     background: rgb(2,0,36);
     background: linear-gradient(0deg, #001429, #1D344B);
@@ -6,13 +9,6 @@ section {
   &#section-01 {
     button {
       margin-top: 40px;
-    }
-  }
-  &#section-02 {
-    #company-training {
-      h2 {
-        margin: 45px auto;
-      }
     }
   }
 }

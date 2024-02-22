@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { InfoCardComponent, articleI } from '../../components/info-card/info-card.component';
+import { ProductCardComponent } from '../../components/product-card/product-card.component';
 
 @Component({
   selector: 'app-services-view',
   standalone: true,
-  imports: [InfoCardComponent],
+  imports: [InfoCardComponent, ProductCardComponent],
   templateUrl: './services-view.component.html',
   styleUrl: './services-view.component.css'
 })
