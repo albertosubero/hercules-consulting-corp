@@ -9,6 +9,7 @@ body {
 }
 
 section {
+  padding: 50px 0;
   &.dark {
     background-color: #001429;
     color: #ffffff;
@@ -148,6 +149,10 @@ a  {
   &:visited {
     color: inherit;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .accent-color {
