@@ -24,7 +24,11 @@
     margin-top: -5px;
     .title {
       font-size: 28px;
+      min-height: 115px;
       font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       &::after {
         display: block;
         content: "";
