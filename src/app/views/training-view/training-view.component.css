@@ -6,3 +6,42 @@
     margin-top: 40px;
   }
 }
+
+#section-03 {
+  display: flex;
+  position: relative;
+  @media (min-width: 1366px) {
+    height: 640px;
+  }
+  @media (min-width: 992px) and (max-width: 1366px) {
+    min-height: 366px;
+  }
+  .r-img {
+    width: 100%;
+    height: auto;
+    right: 40px;
+    top: 0;
+    z-index: 2;
+    @media (min-width: 992px) {
+      position: absolute;
+      width: auto;
+      height: 100%;
+    }
+  }
+  .white-skew {
+    height: 100%;
+    width: 757px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    transform-origin: left bottom;
+    -ms-transform: skew(330.5deg, 0deg);
+    -webkit-transform: skew(330.5deg, 0deg);
+    transform: skew(330.5deg, 0deg);
+    @media (min-width: 992px) and (max-width: 1366px) {
+      width: 492px;
+    }
+  }
+}
