@@ -212,7 +212,6 @@ a  {
   min-height: 664px;
   padding: 90px;
   color: #ffffff;
-  background-image: url('/assets/images/image-parallax-training.png');
   &::before {
     content: "";
     position: absolute;
@@ -243,6 +242,58 @@ a  {
       max-width: 910px;
       margin: 0 auto;
       font-size: 26px;
+    }
+  }
+}
+
+.skew-section-image {
+  display: flex;
+  position: relative;
+  @media (min-width: 1366px) {
+    height: 450px;
+  }
+  @media (min-width: 992px) and (max-width: 1366px) {
+    min-height: 366px;
+  }
+  .absolute-img {
+    width: 100%;
+    height: auto;
+    top: 0;
+    z-index: 2;
+    @media (min-width: 992px) {
+      position: absolute;
+      width: auto;
+      height: 100%;
+    }
+    &.r-img {
+      right: 90px;
+    }
+    &.l-img {
+      left: 90px;
+    }
+  }
+  .white-skew {
+    height: 100%;
+    width: 624px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    transform-origin: left bottom;
+    @media (min-width: 992px) and (max-width: 1366px) {
+      width: 542px;
+    }
+    &.r-skew {
+      right: 0;
+      -ms-transform: skew(330.5deg, 0deg);
+      -webkit-transform: skew(330.5deg, 0deg);
+      transform: skew(330.5deg, 0deg);
+    }
+    &.l-skew {
+      left: 0;
+      -ms-transform: skew(29.5deg, 0deg);
+      -webkit-transform: skew(29.5deg, 0deg);
+      transform: skew(29.5deg, 0deg);
     }
   }
 }
