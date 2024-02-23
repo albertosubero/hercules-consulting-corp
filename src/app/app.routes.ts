@@ -10,5 +10,5 @@ export const routes: Routes = [
   { path: 'services', title:"Services Page", component: ServicesViewComponent },
   { path: 'training', title: "Training Page", component: TrainingViewComponent },
   { path: 'recruitment', title: "Recruitment Page", component: RecruitmentComponent },
-  { path: 'about-us', title: "Careers Page", component: AboutUsComponent }
+  { path: 'about-us', title: "About us Page", component: AboutUsComponent }
 ];
