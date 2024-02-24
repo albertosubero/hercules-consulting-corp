@@ -1,0 +1,43 @@
+#section-01 {
+  &::before {
+    background: linear-gradient(0deg, #081B30 0%, rgba(29, 52, 75, 0.5) 100%);
+  }
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+.contact-flex {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  gap: 36px
+}
+
+.contact-wrapper {
+  display: flex;
+  font-size: 14px;
+  font-weight: 200;
+  img {
+    margin-right: 12px;
+    width: 18px;
+    @media (max-width: 992px) {
+      width: 20px;
+      margin-right: 0;
+    }
+  }
+  span {
+    font-weight: 400;
+  }
+  @media (max-width: 992px) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 14px;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
