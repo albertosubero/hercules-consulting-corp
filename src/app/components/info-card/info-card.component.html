@@ -1,7 +1,7 @@
 <div class="container">
   @for (card of data; track card.id) {
     <div class="three-col">
-      <div class="card-wrapper">
+      <div class="card-wrapper" data-aos="fade-left" data-aos-delay="500">
         <img class="card-img" width="100%" height="auto" [src]="'assets/images/' + card.img">
         <div class="card-info text-center">
           <p class="title">{{ card.title }}</p>
