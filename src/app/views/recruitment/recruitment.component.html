@@ -1,10 +1,10 @@
 <!-- #Section 00 -->
 <section id="section-00" class="light">
   <div class="container row">
-    <div class="half-col">
+    <div class="half-col" data-aos="fade-right" data-aos-delay="500">
       <img width="100%" height="auto" src="assets/images/recruitment-section-image-00.png">
     </div>
-    <div class="half-col d-flex">
+    <div class="half-col d-flex" data-aos="fade" data-aos-delay="300">
       <h1>Reclutami<span class="accent-color">ento</span></h1>
       <p style="max-width: 480px;">Lorem Ipsum is simply dummy text of  printing the typesetting industry Lorem Ipsum.</p>
       <button class="btn accent lg-btn">Planificar una consulta</button>
@@ -13,7 +13,7 @@
 </section>
 <!-- #Section 01 -->
 <section id="section-01" class="image-parallax-card" style="background-image: url('/assets/images/image-parallax-recruitment.png')">
-  <div class="content">
+  <div class="content" data-aos="fade-down" data-aos-delay="300">
     <h2>Nuestra <i class="accent-color">Metodologías</i></h2>
     <p>Utilizamos evaluaciones exhaustivas y entrevistas especializadas para garantizar coincidencias perfectas.</p>
     <span class="icon-link">
@@ -24,7 +24,7 @@
 </section>
 <!-- #Section 02 -->
 <section id="section-02">
-  <div id="company-training" class="container">
+  <div id="company-training" class="container" data-aos="fade" data-aos-delay="300">
     <h2 class="section-title">Nuestro <i class="accent-color">Reclutamiento</i></h2>
   </div>
   <app-info-card [data]="recruitmentData" />
@@ -32,7 +32,7 @@
 <!-- #Section 03 -->
 <section id="section-03" class="dark skew-section-image">
   <div class="container row">
-    <div class="half-col d-flex">
+    <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="300">
       <h2 style="max-width: 575px;">Nuestra <i class="accent-color">Explicación</i></h2>
       <p style="max-width: 500px;">Desde la creación de perfiles de trabajo hasta la entrevista final, te guiaremos en cada paso del proceso.</p>
       <span class="icon-link">
@@ -41,7 +41,7 @@
       </span>
     </div>
     <div class="half-col">
-      <img class="absolute-img r-img" width="100%" height="auto" src="assets/images/image-explanation-00.png">
+      <img class="absolute-img r-img" width="100%" height="auto" src="assets/images/image-explanation-00.png" data-aos="fade-right" data-aos-delay="300">
       <div class="white-skew r-skew mobile-hidden"></div>
     </div>
   </div>
@@ -49,10 +49,10 @@
 <!-- #Section 04 -->
 <section id="section-04" class="light">
   <div class="container row">
-    <div class="half-col">
+    <div class="half-col" data-aos="fade-right" data-aos-delay="300">
       <img width="100%" height="auto" src="assets/images/services-section-one-005-image.png">
     </div>
-    <div class="half-col d-flex">
+    <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="300">
       <h2 style="max-width: 575px;">Lorem Ipsum is simply duy text of the printing <span class="accent-color">and typesetting industry.</span></h2>
       <p class="p-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.</p>
       <span class="icon-link">
@@ -66,10 +66,10 @@
 <section id="section-05" class="dark skew-section-image" style="margin-bottom: 75px;">
   <div class="container row">
     <div class="half-col">
-      <img class="absolute-img l-img" width="100%" height="auto" src="assets/images/image-success-00.png">
+      <img class="absolute-img l-img" width="100%" height="auto" src="assets/images/image-success-00.png" data-aos="fade-right" data-aos-delay="300">
       <div class="white-skew l-skew mobile-hidden"></div>
     </div>
-    <div class="half-col d-flex">
+    <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="300">
       <h2 style="max-width: 575px;">Métricas <i class="accent-color">de Éxito</i></h2>
       <p style="max-width: 500px;">Nuestra tasa de retención y satisfacción del cliente son indicadores sólidos de nuestro éxito</p>
       <span class="icon-link">
@@ -81,17 +81,17 @@
 </section>
 <!-- #Section 06 -->
 <section id="section-06" class="light gray">
-  <div id="company-clients-videos" class="container">
+  <div id="company-clients-videos" class="container" data-aos="fade" data-aos-delay="300">
     <h2 class="section-title">Lo que dicen nuestros <i class="accent-color">clientes satisfechos</i></h2>
   </div>
   <div class="container row text-center" style="flex-wrap: wrap;">
     @for (video of reviewsVideosData.slice(0, videosLimit); track video.id) {
-      <div class="four-col">
+      <div class="four-col" data-aos="fade-left" data-aos-delay="500">
         <iframe class="video-wrapper" width="95%" height="315" [src]="video.url | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     }
   </div>
-  <div class="container" style="justify-content: center;">
+  <div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="300">
     <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">Ver más reseñas</button>
   </div>
 </section>
