@@ -6,6 +6,7 @@ import { RecruitmentComponent } from './views/recruitment/recruitment.component'
 import { AboutUsComponent } from './views/about-us/about-us.component';
 import { CareersComponent } from './views/careers/careers.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { BlogComponent } from './views/blog/blog.component';
 
 export const routes: Routes = [
   { path: '', title:"Home Page", component: HomeViewComponent },
@@ -14,5 +15,6 @@ export const routes: Routes = [
   { path: 'recruitment', title: "Recruitment Page", component: RecruitmentComponent },
   { path: 'about-us', title: "About us Page", component: AboutUsComponent },
   { path: 'careers', title: "Careers Page", component: CareersComponent },
-  { path: 'contact', title: "Contact Page", component: ContactComponent }
+  { path: 'contact', title: "Contact Page", component: ContactComponent },
+  { path: 'blog', title: "Blog Page", component: BlogComponent }
 ];
