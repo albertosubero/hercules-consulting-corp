@@ -1,11 +1,11 @@
 <!-- #Section 01 -->
 <section id="section-01" class="image-parallax-card" style="background-image: url('/assets/images/image-parallax-contact-form.png');">
   <div class="content">
-    <div class="container text-center" style="display: block;">
+    <div class="container text-center" style="display: block;" data-aos="fade-down" data-aos-delay="300">
       <h2 class="md">Cont<span class="accent-color">acto</span></h2>
       <p class="md" style="max-width: 490px; font-size: 16px;">Lorem Ipsum is simply dummy text printing typesetting industry lorem Ipsum has been the industry's.</p>
     </div>
-    <div class="form-wrapper" style="max-width: 450px;">
+    <div class="form-wrapper" style="max-width: 450px;" data-aos="fade-down" data-aos-delay="500">
       <div class="container" style="flex-direction: column;">
         <div class="input-wrapper">
           <label for="">Números de teléfono*<span>*</span></label>
@@ -20,7 +20,7 @@
         <button class="btn accent lg-btn" style="width: 244px;">Enviar</button>
       </div>
     </div>
-    <div class="contact-flex">
+    <div class="contact-flex" data-aos="fade-up" data-aos-delay="600">
       <div class="contact-wrapper">
         <img src="assets/images/icon-maps-pin.svg">
         Dirección:  
@@ -38,10 +38,10 @@
 <!-- #Section 02 -->
 <section id="section-02" class="light">
   <div class="container row">
-    <div class="half-col">
+    <div class="half-col" data-aos="fade-right" data-aos-delay="300">
       <img width="100%" height="auto" src="assets/images/services-section-one-005-image.png">
     </div>
-    <div class="half-col d-flex">
+    <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="300">
       <h2 style="max-width: 575px;">Lorem Ipsum is simply duy text of the printing <span class="accent-color">and typesetting industry.</span></h2>
       <p class="p-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.</p>
       <span class="icon-link">
@@ -53,7 +53,7 @@
 </section>
 <!-- #Section 03 -->
 <section id="section-03" class="image-parallax-card" style="background-image: url('assets/images/image-parallax-training.png')">
-  <div class="content">
+  <div class="content" data-aos="fade-down" data-aos-delay="300">
     <h2>Lorem Ipsum is <i class="accent-color">simply dummy</i></h2>
     <p>Lorem Ipsum is simply dummy text  printing and industry Lorem Ipsum has been the industry's</p>
     <span class="icon-link">
@@ -64,17 +64,17 @@
 </section>
 <!-- #Section 04 -->
 <section id="section-04" class="light">
-  <div id="company-clients-videos" class="container">
+  <div id="company-clients-videos" class="container" data-aos="fade-left" data-aos-delay="300">
     <h2 class="section-title">Lo que dicen nuestros <i class="accent-color">clientes satisfechos</i></h2>
   </div>
   <div class="container row text-center" style="flex-wrap: wrap;">
     @for (video of reviewsVideosData.slice(0, videosLimit); track video.id) {
-      <div class="four-col">
+      <div class="four-col" data-aos="fade-right" data-aos-delay="300">
         <iframe class="video-wrapper" width="95%" height="315" [src]="video.url | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     }
   </div>
-  <div class="container" style="justify-content: center;">
+  <div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="300">
     <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">Ver más reseñas</button>
   </div>
 </section>
