@@ -75,7 +75,7 @@
       padding: 34px 50px 50px;
       box-sizing: border-box;
       margin: auto;
-      background-image: url('/assets/images/hc-pattner.png');
+      background-image: url('../../../assets/images/hc-pattner.png');
       background-color: #001F41;
       .cursive {
         font-family: "Alex Brush", cursive;
