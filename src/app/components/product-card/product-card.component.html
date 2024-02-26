@@ -1,7 +1,7 @@
 <div class="container">
   @for (product of data.slice(0, limit); track product.id) {
     <div class="four-col">
-      <div class="card-wrapper" data-aos="fade-right" data-aos-delay="500">
+      <div class="card-wrapper" data-aos="fade-right" data-aos-delay="600">
         <img class="card-img" width="100%" height="auto" [src]="'assets/images/' + product.img">
         <div class="card-info">
           <p>{{ product.description }}</p>
@@ -11,6 +11,6 @@
     </div>
   }
 </div>
-<div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="300">
+<div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="600">
   <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="limit < data.length ? limit = limit + 4 : limit = data.length">Ver más formaciones</button>
 </div>

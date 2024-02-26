@@ -392,3 +392,38 @@ a  {
   border-radius: 14px;
   margin-bottom: 40px;
 }
+
+
+.trasition-wrapper {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  background-color: #04E3FF;
+  animation: route-height-transition 1s;
+  &.light {
+    background-color: #ffffff;
+  }
+  &.second-layer {
+    background-color: #001429;
+    animation: route-height-transition 1.5s;
+    animation-delay: .5s;
+  }
+}
+
+@keyframes route-height-transition {
+  0% {
+    top: 100vh;
+    height: 100vh;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+    height: 100vh;
+  }
+  100% {
+    top: 0;
+    height: 0;
+  }
+}
