@@ -1,0 +1,12 @@
+<owl-carousel-o [options]="testimonialsCarousel">
+  @for (testimonial of testimonialsData; track testimonial.id) {
+    <ng-template carouselSlide>
+      <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+        <img width="100%" height="auto" [src]="'assets/images/' + testimonial.image">
+        <img class="auto-img quote-icon" src="assets/images/icon-quotation.svg">
+        <p>{{ testimonial.content }}</p>
+        <p class="testimonial-name">{{ testimonial.name }}</p>
+      </div>
+    </ng-template>
+  }
+</owl-carousel-o>
