@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { ArticleCardComponent } from '../../components/article-card/article-card.component';
 
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, ArticleCardComponent],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })

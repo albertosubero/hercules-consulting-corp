@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { ArticleCardComponent } from '../../components/article-card/article-card.component';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [ProductCardComponent, CarouselModule],
+  imports: [ProductCardComponent, CarouselModule, ArticleCardComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })

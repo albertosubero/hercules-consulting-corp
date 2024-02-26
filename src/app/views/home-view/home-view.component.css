@@ -118,46 +118,4 @@
       margin: 45px auto 90px auto;
     }
   }
-  #company-articles-carousel {
-    .carousel-slide-wrapper {
-      width: 100%;
-      max-width: 412px;
-      .article-data {
-        padding: 0 12px;
-      }
-      .article-date {
-        font-family: "Poppins", sans-serif;
-        display: flex;
-        align-items: start;
-        color: #616161;
-        font-size: 14px;
-        margin-top: 25px;
-        .date-icon {
-          margin: 0 9px 0 0;
-        }
-      }
-      p {
-        text-align: left;
-        color: #616161;
-        font-size: 16px;
-        &.article-title {
-          color: #232647;
-          font-size: 20px;
-          font-weight: 600;
-          margin-top: 20px;
-          margin-bottom: 12px;
-        }
-      }
-      .see-more  {
-        display: flex;
-        color: #232647;
-        font-weight: 700;
-        margin-top: 12px;
-        cursor: pointer;
-        img {
-          margin: 0 0 0 12px;
-        }
-      }
-    }
-  }
 }
