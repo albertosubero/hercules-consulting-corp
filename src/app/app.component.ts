@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { NavHeaderComponent } from './components/nav-header/nav-header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import * as AOS from 'aos'

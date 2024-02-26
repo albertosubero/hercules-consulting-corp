@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-testimonials-carousel',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, CommonModule],
   templateUrl: './testimonials-carousel.component.html',
   styleUrl: './testimonials-carousel.component.css'
 })

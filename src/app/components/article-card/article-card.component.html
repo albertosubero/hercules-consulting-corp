@@ -1,7 +1,7 @@
 <owl-carousel-o [options]="articlesCarousel">
-  @for (article of articlesData; track article.id) {
+  @for (article of articlesData; track article.id; let i = $index) {
     <ng-template carouselSlide>
-      <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+      <div class="carousel-slide-wrapper" data-aos="fade-down" [ngStyle]="{'transition-delay': 250 * (i + 1) + 'ms'}">
         <img width="100%" height="auto" [src]="'assets/images/' + article.image">
         <div class="article-data">
           <div class="article-date">

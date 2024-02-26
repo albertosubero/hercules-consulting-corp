@@ -1,7 +1,7 @@
 <owl-carousel-o [options]="testimonialsCarousel">
-  @for (testimonial of testimonialsData; track testimonial.id) {
+  @for (testimonial of testimonialsData; track testimonial.id; let i = $index) {
     <ng-template carouselSlide>
-      <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+      <div class="carousel-slide-wrapper" data-aos="fade-down" [ngStyle]="{'transition-delay': 250 * (i + 1) + 'ms'}">
         <img width="100%" height="auto" [src]="'assets/images/' + testimonial.image">
         <img class="auto-img quote-icon" src="assets/images/icon-quotation.svg">
         <p>{{ testimonial.content }}</p>

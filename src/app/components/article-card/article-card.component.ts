@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-article-card',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, CommonModule],
   templateUrl: './article-card.component.html',
   styleUrl: './article-card.component.css'
 })
