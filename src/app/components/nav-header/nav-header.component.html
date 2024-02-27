@@ -16,7 +16,13 @@
     </ul>
     <div class="right-actions">
       <div class="lang-selector mobile-hidden">
-        <img src="assets/images/icon-spain-flag.svg">
+        @if (currentLang === 'en') {
+          <img src="assets/images/icon-spain-flag.svg" (click)="setTransLanguage('es')">
+        }
+
+        @if (currentLang === 'es') {
+          <img src="assets/images/icon-en-flag.png" (click)="setTransLanguage('en')">
+        }
       </div>
       <button class="btn light outline header-btn">{{ 'general.request_quote' | translate }}</button>
     </div>
@@ -29,7 +35,13 @@
       <img src="assets/images/icon-close-menu.svg">
     </div>
     <div class="lang-selector">
-      <img src="assets/images/icon-spain-flag.svg">
+      @if (currentLang === 'en') {
+        <img src="assets/images/icon-spain-flag.svg" (click)="setTransLanguage('es')">
+      }
+
+      @if (currentLang === 'es') {
+        <img src="assets/images/icon-en-flag.png" (click)="setTransLanguage('en')">
+      }
     </div>
     <ul>
       <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'navbar.home' | translate }}</li>

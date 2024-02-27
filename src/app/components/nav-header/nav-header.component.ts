@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav-header',
@@ -11,4 +11,14 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class NavHeaderComponent {
   mobileMenuIsOpen: boolean = false;
+  currentLang: string = '';
+
+  constructor(public translate: TranslateService){
+    this.currentLang = this.translate.currentLang;
+  }
+
+  setTransLanguage(lang: string){
+    this.translate.use(lang);
+    this.currentLang = lang;
+  }
 }

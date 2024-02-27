@@ -76,6 +76,13 @@ nav {
       display: none;
     }
   }
+  .lang-selector {
+    cursor: pointer;
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }
 
 .mobile-menu-list {
