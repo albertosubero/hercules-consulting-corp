@@ -8,17 +8,17 @@
       <img width="100%" height="auto" src="assets/images/recruitment-section-image-00.png">
     </div>
     <div class="half-col d-flex" data-aos="fade" data-aos-delay="1500">
-      <h1>Reclutami<span class="accent-color">ento</span></h1>
+      <h1 [innerHTML]="'general.recruitment_title' | translate"></h1>
       <p style="max-width: 480px;">Lorem Ipsum is simply dummy text of  printing the typesetting industry Lorem Ipsum.</p>
-      <button class="btn accent lg-btn">Planificar una consulta</button>
+      <button class="btn accent lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
     </div>
   </div>
 </section>
 <!-- #Section 01 -->
 <section id="section-01" class="image-parallax-card" style="background-image: url('assets/images/image-parallax-recruitment.png')">
   <div class="content" data-aos="fade-down" data-aos-delay="600">
-    <h2>Nuestra <i class="accent-color">Metodologías</i></h2>
-    <p>Utilizamos evaluaciones exhaustivas y entrevistas especializadas para garantizar coincidencias perfectas.</p>
+    <h2 [innerHTML]="'general.our_methodologies' | translate"></h2>
+    <p>{{ 'general.our_methodologies_text' | translate }}</p>
     <span class="icon-link">
       <img src="assets/images/icon-accent-circle-arrow.svg">
       <i>lorem ipsum is simply dummy </i>
@@ -28,7 +28,7 @@
 <!-- #Section 02 -->
 <section id="section-02">
   <div id="company-training" class="container" data-aos="fade" data-aos-delay="600">
-    <h2 class="section-title">Nuestro <i class="accent-color">Reclutamiento</i></h2>
+    <h2 class="section-title" [innerHTML]="'general.our_recruitment_title' | translate"></h2>
   </div>
   <app-info-card [data]="recruitmentData" />
 </section>
@@ -36,8 +36,8 @@
 <section id="section-03" class="dark skew-section-image">
   <div class="container row">
     <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="600">
-      <h2 style="max-width: 575px;">Nuestra <i class="accent-color">Explicación</i></h2>
-      <p style="max-width: 500px;">Desde la creación de perfiles de trabajo hasta la entrevista final, te guiaremos en cada paso del proceso.</p>
+      <h2 style="max-width: 575px;" [innerHTML]="'general.our_explanation_title' | translate"></h2>
+      <p style="max-width: 500px;">{{ 'general.our_explanation_text' | translate }}</p>
       <span class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
         <i>lorem ipsum is simply dummy text printing</i>
@@ -60,7 +60,7 @@
       <p class="p-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.</p>
       <span class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
-        <i>Ver más</i>
+        <i>{{ 'general.see_more' | translate }}</i>
       </span>
     </div>
   </div>
@@ -73,8 +73,8 @@
       <div class="white-skew l-skew mobile-hidden"></div>
     </div>
     <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="600">
-      <h2 style="max-width: 575px;">Métricas <i class="accent-color">de Éxito</i></h2>
-      <p style="max-width: 500px;">Nuestra tasa de retención y satisfacción del cliente son indicadores sólidos de nuestro éxito</p>
+      <h2 style="max-width: 575px;" [innerHTML]="'general.success_metrics' | translate"></h2>
+      <p style="max-width: 500px;">{{ 'general.success_metrics_text' | translate }}</p>
       <span class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
         <i>lorem ipsum is simply dummy text printing</i>
@@ -85,7 +85,7 @@
 <!-- #Section 06 -->
 <section id="section-06" class="light gray">
   <div id="company-clients-videos" class="container" data-aos="fade" data-aos-delay="600">
-    <h2 class="section-title">Lo que dicen nuestros <i class="accent-color">clientes satisfechos</i></h2>
+    <h2 class="section-title" [innerHTML]="'general.our_clients_say_title' | translate"></h2>
   </div>
   <div class="container row text-center" style="flex-wrap: wrap;">
     @for (video of reviewsVideosData.slice(0, videosLimit); track video.id) {
@@ -95,6 +95,6 @@
     }
   </div>
   <div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="600">
-    <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">Ver más reseñas</button>
+    <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">{{ 'general.see_more_reviews' | translate }}</button>
   </div>
 </section>

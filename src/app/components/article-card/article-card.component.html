@@ -8,10 +8,10 @@
             <img class="auto-img date-icon" src="assets/images/icon-calendar.svg">
             {{ article.date }}
           </div>
-          <p class="article-title">{{ article.title }}</p>
+          <p class="article-title">{{ article.title | translate }}</p>
           <p>{{ article.content }}</p>
           <div class="see-more">
-            Ver más
+            {{ 'general.see_more' | translate }}
             <img class="auto-img seemore-icon" src="assets/images/icon-next-arrow.svg">
           </div>
         </div>

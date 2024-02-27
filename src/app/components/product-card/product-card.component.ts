@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 export interface productI {
   'id': Number;
@@ -10,7 +11,7 @@ export interface productI {
 @Component({
   selector: 'app-product-card',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.css'
 })

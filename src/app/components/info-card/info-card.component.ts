@@ -1,17 +1,18 @@
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 export interface articleI {
-  'id': Number;
-  'title': String;
-  'content': String;
-  'img': String;
-  'url': String;
+  'id': number;
+  'title': string;
+  'content': string;
+  'img': string;
+  'url': string;
 }
 
 @Component({
   selector: 'app-info-card',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './info-card.component.html',
   styleUrl: './info-card.component.css'
 })

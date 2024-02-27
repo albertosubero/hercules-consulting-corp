@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-article-card',
   standalone: true,
-  imports: [CarouselModule, CommonModule],
+  imports: [CarouselModule, CommonModule, TranslateModule],
   templateUrl: './article-card.component.html',
   styleUrl: './article-card.component.css'
 })
@@ -35,7 +36,7 @@ export class ArticleCardComponent {
   articlesData = [
     {
       id: 1,
-      title: 'Potenciamos talento a través de formación y reclutamiento',
+      title: 'general.we_enhance_talent2',
       content: 'Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.',
       date: '07/02/2024',
       url: '',
@@ -43,7 +44,7 @@ export class ArticleCardComponent {
     },
     {
       id: 2,
-      title: 'Potenciamos talento a través de formación y reclutamiento',
+      title: 'general.we_enhance_talent2',
       content: 'Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.',
       date: '07/02/2024',
       url: '',
@@ -51,7 +52,7 @@ export class ArticleCardComponent {
     },
     {
       id: 3,
-      title: 'Potenciamos talento a través de formación y reclutamiento',
+      title: 'general.we_enhance_talent2',
       content: 'Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.',
       date: '07/02/2024',
       url: '',

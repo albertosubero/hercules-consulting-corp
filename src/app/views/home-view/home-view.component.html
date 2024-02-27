@@ -5,9 +5,9 @@
 <section id="section-00" class="light">
   <div class="container row">
     <div class="half-col d-flex" data-aos="fade" data-aos-delay="1500">
-      <h1>Potenciamos talento a través de <span class="accent-color">formación y reclutamiento</span></h1>
-      <p style="max-width: 480px;">Construyendo equipos exitosos y desarrollando habilidades de vanguardia</p>
-      <button class="btn accent lg-btn">Solicitar un presupuesto</button>
+      <h1 [innerHTML]="'general.we_enhance_talent' | translate"></h1>
+      <p style="max-width: 480px;">{{ 'general.building_teams' | translate }}</p>
+      <button class="btn accent lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
     </div>
     <div class="half-col" data-aos="fade-left" data-aos-delay="2000">
       <img width="100%" height="auto" src="assets/images/home-section-one-potenciamos-talento-image.png">
@@ -21,11 +21,11 @@
       <img width="100%" height="auto" src="assets/images/home-section-one-001-image.png">
     </div>
     <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="600">
-      <h2 style="max-width: 575px;">Descubre cómo nuestra formación y reclutamiento transforman empresas</h2>
-      <p>Explora a fondo nuestros servicios personalizados.</p>
+      <h2 style="max-width: 575px;">{{ 'general.discover_how_our_training' | translate }}</h2>
+      <p>{{ 'general.explore_our_services' | translate }}</p>
       <span class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
-        <i>Explora Nuestros Servicios y Desbloquea Tu Potencial Ahora</i>
+        <i>{{ 'general.explore_our_services2' | translate }}</i>
       </span>
     </div>
   </div>
@@ -33,28 +33,28 @@
   <img class="hr-separator" width="100%" height="auto" src="assets/images/hr-separator.svg">
   <!-- hr-separator -->
   <div id="company-values" class="container" data-aos="fade"  data-aos-delay="600">
-    <h2>Somos líderes en formación y reclutamiento, <i class="accent-color">impulsados por valores y experiencia</i></h2>
+    <h2 [innerHTML]="'general.we_are_leaders_in_training' | translate"></h2>
   </div>
   <div id="company-values-carousel" class="container carousel-wrapper" style="display: block;">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
         <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
           <img class="auto-img" src="assets/images/image-fortalezas.png">
-          <h2>Fortalezas</h2>
+          <h2>{{ 'general.strengths' | translate }}</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.</p>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="500">
           <img class="auto-img" src="assets/images/image-valores.png">
-          <h2>Valores</h2>
+          <h2>{{ 'general.values' | translate }}</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.</p>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="800">
           <img class="auto-img" src="assets/images/image-expertise-clave.png">
-          <h2>Expertise clave</h2>
+          <h2>{{ 'general.key_expertise' | translate }}</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.</p>
         </div>
       </ng-template>
@@ -64,7 +64,7 @@
 <!-- #Section 02 -->
 <section id="section-02" class="dark">
   <div id="company-testimonials" class="container gradient-dark-card" data-aos="fade"  data-aos-delay="600">
-    <h2>Lo que dicen nuestros clientes satisfechos <i class="accent-color">en el ámbito empresarial</i></h2>
+    <h2 [innerHTML]="'general.our_clients_title' | translate"></h2>
   </div>
   <div id="company-testimonials-carousel" class="container carousel-wrapper" style="display: block;">
     <app-testimonials-carousel />
@@ -76,7 +76,7 @@
 <!-- #Section 03 -->
 <section id="section-03" class="dark">
   <div id="company-entrepreneurs" class="container" data-aos="fade"  data-aos-delay="600">
-    <h2>Emprendedores</h2>
+    <h2>{{ 'general.entrepreneurs' | translate }}</h2>
   </div>
   <div id="company-entrepreneurs-carousel" class="container carousel-wrapper" style="display: block;">
     <owl-carousel-o [options]="customOptions">
@@ -84,33 +84,33 @@
         <div class="carousel-slide-wrapper" data-aos="flip-up" data-aos-delay="200">
           <img width="100%" height="auto" src="assets/images/hercules-light-logo.svg">
           <img width="100%" height="auto" src="assets/images/image-entrepreneurs-001.png">
-          <p class="cursive">Specialise en</p>
-          <p class="formation">formation</p>
+          <p class="cursive">{{ 'general.specialize_in' | translate}}<</p>
+          <p class="formation">{{ 'general.formation' | translate}}</p>
           <div class="skill-box">B2B</div>
-          <p class="position">ET RECRUTEMENT</p>
-          <button class="btn accent md-btn">Contact us</button>
+          <p class="position">{{ 'general.et_recrutement' | translate}}</p>
+          <button class="btn accent md-btn">{{ 'general.contact_us' | translate}}</button>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="carousel-slide-wrapper" data-aos="flip-up" data-aos-delay="500">
           <img width="100%" height="auto" src="assets/images/hercules-light-logo.svg">
           <img width="100%" height="auto" src="assets/images/image-entrepreneurs-002.png">
-          <p class="cursive">Specialise en</p>
-          <p class="formation">formation</p>
+          <p class="cursive">{{ 'general.specialize_in' | translate}}<</p>
+          <p class="formation">{{ 'general.formation' | translate}}</p>
           <div class="skill-box accent-color">B2B</div>
-          <p class="position">ET RECRUTEMENT</p>
-          <button class="btn accent md-btn">Contact us</button>
+          <p class="position">{{ 'general.et_recrutement' | translate}}</p>
+          <button class="btn accent md-btn">{{ 'general.contact_us' | translate}}</button>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="carousel-slide-wrapper" data-aos="flip-up" data-aos-delay="800">
           <img width="100%" height="auto" src="assets/images/hercules-light-logo.svg">
           <img width="100%" height="auto" src="assets/images/image-entrepreneurs-001.png">
-          <p class="cursive">Specialise en</p>
-          <p class="formation">formation</p>
+          <p class="cursive">{{ 'general.specialize_in' | translate}}<</p>
+          <p class="formation">{{ 'general.formation' | translate}}</p>
           <div class="skill-box">B2B</div>
-          <p class="position">ET RECRUTEMENT</p>
-          <button class="btn accent md-btn">Contact us</button>
+          <p class="position">{{ 'general.et_recrutement' | translate}}</p>
+          <button class="btn accent md-btn">{{ 'general.contact_us' | translate}}</button>
         </div>
       </ng-template>
     </owl-carousel-o>
@@ -119,7 +119,7 @@
 <!-- #Section 04 -->
 <section id="section-04">
   <div id="company-articles" class="container" data-aos="fade"  data-aos-delay="600">
-    <h2>Descubre cómo hemos liderado proyectos  <i class="accent-color">exitosos de formación y reclutamiento</i></h2>
+    <h2 [innerHTML]="'general.projects_led_title' | translate"></h2>
   </div>
   <div id="company-articles-carousel" class="container carousel-wrapper" style="display: block;">
     <app-article-card />

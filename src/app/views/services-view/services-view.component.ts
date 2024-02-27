@@ -5,11 +5,12 @@ import { SafePipe } from '../../utils/pipes/safe.pipe';
 import { trainingData } from '../../utils/content/training';
 import { recruitmentData } from '../../utils/content/recruitment';
 import { reviewsVideosData } from '../../utils/content/reviews-videos';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-services-view',
   standalone: true,
-  imports: [InfoCardComponent, ProductCardComponent, SafePipe],
+  imports: [InfoCardComponent, ProductCardComponent, SafePipe, TranslateModule],
   templateUrl: './services-view.component.html',
   styleUrl: './services-view.component.css'
 })

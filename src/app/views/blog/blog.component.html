@@ -11,8 +11,8 @@
         <div class="search-button">
           <img width="100%" height="auto" src="assets/images/icon-search.svg">
         </div>
-        <input type="text" placeholder="Buscar">
-        <button class="btn accent lg-btn">Buscar</button>
+        <input type="text" [placeholder]="'general.search' | translate">
+        <button class="btn accent lg-btn">{{ 'general.search' | translate }}</button>
       </div>
     </div>
     <div class="half-col" data-aos="fade-left" data-aos-delay="2000">
@@ -58,7 +58,7 @@
 <!-- #Section 04 -->
 <section id="section-04">
   <div id="company-articles" class="container" data-aos="fade" data-aos-delay="600">
-    <h2>Descubre cómo hemos liderado proyectos  <i class="accent-color">exitosos de formación y reclutamiento</i></h2>
+    <h2>Lorem Ipsum simply dummy printing  <i class="accent-color">Lorem Ipsum simply</i></h2>
   </div>
   <div id="company-articles-carousel" class="container carousel-wrapper" style="display: block;">
     <app-article-card />
@@ -70,7 +70,7 @@
 <!-- #Section 05 -->
 <section id="section-05" class="dark">
   <div id="company-testimonials" class="container gradient-dark-card" data-aos="fade" data-aos-delay="600">
-    <h2>Lo que dicen nuestros clientes satisfechos <i class="accent-color">en el ámbito empresarial</i></h2>
+    <h2>Lorem Ipsum simply dummy printing <i class="accent-color">Lorem Ipsum simply</i></h2>
   </div>
   <div id="company-testimonials-carousel" class="container carousel-wrapper" style="display: block;">
     <app-testimonials-carousel />
