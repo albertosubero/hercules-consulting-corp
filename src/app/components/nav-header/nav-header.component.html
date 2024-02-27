@@ -25,6 +25,12 @@
 
 @if (mobileMenuIsOpen) {
   <div class="mobile-menu-list desktop-hidden">
+    <div class="close-menu" (click)="mobileMenuIsOpen = false">
+      <img src="assets/images/icon-close-menu.svg">
+    </div>
+    <div class="lang-selector">
+      <img src="assets/images/icon-spain-flag.svg">
+    </div>
     <ul>
       <li class="active">Inicio</li>
       <li>Servicios</li>
@@ -33,10 +39,7 @@
       <li>Sobre nosotros</li>
       <li>Contacto</li>
     </ul>
-    <div class="right-actions">
-      <div class="lang-selector">
-        <img src="assets/images/icon-spain-flag.svg">
-      </div>
+    <div class="right-actions text-center">
       <button class="btn light outline header-btn">Solicitar un presupuesto</button>
     </div>
   </div>

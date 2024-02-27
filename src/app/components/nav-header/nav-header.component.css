@@ -71,15 +71,21 @@ nav {
       }
     }
   }
+  .header-btn {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
 }
 
 .mobile-menu-list {
   font-family: "Poppins", sans-serif;
   background-color: #001429;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
+  z-index: 999;
   ul {
     padding: 0;
     width: 100%;
@@ -87,7 +93,7 @@ nav {
     li {
       cursor: pointer;
       color: #04e3ff80;
-      font-size: 22px;
+      font-size: 20px;
       padding: 20px;
       text-align: center;
       &:hover, &.active {
@@ -102,5 +108,20 @@ nav {
         } */
       }
     }
+  }
+  .close-menu {
+    width: 30px;
+    padding: 20px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .lang-selector {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 20px;
   }
 }
