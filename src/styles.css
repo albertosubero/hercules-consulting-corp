@@ -29,6 +29,12 @@ section {
   }
   h2.section-title {
     margin: 45px auto 90px auto;
+    @media (max-width: 576px) {
+      margin: 40px auto;
+    }
+  }
+  @media (max-width: 576px) {
+    padding: 50px 25px;
   }
 }
 
@@ -143,6 +149,9 @@ h1 {
     color: #04E3FF;
     font-weight: 900;
   }
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
 }
 
 h2 {
@@ -152,6 +161,9 @@ h2 {
     color: #04E3FF;
     font-weight: 500;
   }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
 }
 
 p {
@@ -160,6 +172,9 @@ p {
   font-family: "Poppins", sans-serif;
   margin: 0;
   &.p-md {
+    font-size: 16px;
+  }
+  @media (max-width: 576px) {
     font-size: 16px;
   }
 }
@@ -188,6 +203,12 @@ a  {
   font-weight: 600;
   img {
     margin-right: 15px;
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 576px) {
+    flex-direction: column;
   }
 }
 
@@ -206,7 +227,7 @@ a  {
 .numbers-container {
   flex-wrap: wrap;
   @media (max-width: 992px) {
-    flex-direction: row;
+    flex-direction: row !important;
   }
 }
 
@@ -218,7 +239,7 @@ a  {
     font-weight: 800;
     color: #04E3FF;
     @media (max-width: 576px) {
-      font-size: 40px;
+      font-size: 30px;
     }
     @media (min-width: 992px) and (max-width: 1200px) {
       font-size: 40px;
@@ -228,7 +249,7 @@ a  {
     font-size: 18px;
   }
   @media (max-width: 992px) {
-    flex-basis: 50%;
+    flex-basis: 50% !important;
   }
 }
 
@@ -263,12 +284,19 @@ a  {
     height: 100%;
     top: 0;
     left: 0;
+    @media (max-width: 576px) {
+      padding: 0 25px;
+      width: calc(100% - 50px);
+    }
     h2 {
       font-size: 50px;
       margin-bottom: 20px;
       &.md {
         font-size: 40px;
         margin-bottom: 16px;
+      }
+      @media (max-width: 576px) {
+        font-size: 30px !important;
       }
     }
     p {
@@ -279,6 +307,9 @@ a  {
         font-size: 20px;
         margin-bottom: 16px;
       }
+      @media (max-width: 576px) {
+        font-size: 16px !important;
+      }
     }
   }
 }
@@ -288,9 +319,12 @@ a  {
   position: relative;
   @media (min-width: 1366px) {
     height: 450px;
-  }
+  } 
   @media (min-width: 992px) and (max-width: 1366px) {
     min-height: 366px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 100px;
   }
   .absolute-img {
     width: 100%;
@@ -304,6 +338,10 @@ a  {
     }
     &.r-img {
       right: 90px;
+      @media (max-width: 992px) {
+        margin-top: 40px;
+        margin-bottom: -200px;
+      }
     }
     &.l-img {
       left: 90px;

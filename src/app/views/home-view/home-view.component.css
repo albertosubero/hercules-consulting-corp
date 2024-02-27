@@ -34,6 +34,11 @@
     margin-bottom: 100px;
     padding: 0 75px;
     box-sizing: border-box;
+    @media (max-width: 576px) {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -50,6 +55,10 @@
     margin-bottom: 100px;
     padding: 0 75px;
     box-sizing: border-box;
+    @media (max-width: 576px) {
+      padding: 0;
+      margin-top: 0;
+    }
     .carousel-slide-wrapper {
       width: 100%;
       max-width: 370px;

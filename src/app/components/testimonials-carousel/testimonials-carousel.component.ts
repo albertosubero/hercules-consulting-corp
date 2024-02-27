@@ -22,7 +22,7 @@ export class TestimonialsCarouselComponent {
       0: {
         items: 1
       },
-      400: {
+      576: {
         items: 2
       },
       992: {

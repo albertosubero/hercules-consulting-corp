@@ -2,6 +2,9 @@
   &::before {
     background: linear-gradient(0deg, #081B30 0%, rgba(29, 52, 75, 0.5) 100%);
   }
+  @media (max-width: 576px) {
+    min-height: 800px !important;
+  }
 }
 
 .input-wrapper {
@@ -13,7 +16,11 @@
   max-width: 900px;
   display: flex;
   justify-content: center;
-  gap: 36px
+  gap: 36px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .contact-wrapper {
@@ -36,8 +43,5 @@
     text-align: center;
     align-items: center;
     gap: 14px;
-  }
-  @media (max-width: 576px) {
-    font-size: 12px;
   }
 }

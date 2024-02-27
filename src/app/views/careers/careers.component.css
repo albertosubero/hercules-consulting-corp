@@ -1,6 +1,9 @@
 #section-01 {
   button {
     margin-top: 40px;
+    @media (max-width: 576px) {
+      margin-bottom: 40px;
+    }
   }
 }
 
