@@ -44,7 +44,9 @@ export class NavHeaderComponent {
       if (event instanceof NavigationStart) {
         // Navigation is starting...
         if (this.isResponsive) {
-          this.toggleMobileMenu()
+          if (this.mobileMenuIsOpen) {
+            this.toggleMobileMenu()
+          }
         }
       }
     });
