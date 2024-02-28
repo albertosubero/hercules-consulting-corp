@@ -24,7 +24,7 @@ export class HomeViewComponent {
       0: {
         items: 1
       },
-      400: {
+      768: {
         items: 2
       },
       992: {
