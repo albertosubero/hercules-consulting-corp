@@ -1,6 +1,6 @@
 <nav>
   <div class="container">
-    <div class="mobile-menu-icon desktop-hidden" (click)="mobileMenuIsOpen = true">
+    <div class="mobile-menu-icon desktop-hidden" (click)="toggleMobileMenu()">
       <img src="assets/images/menu-burger-horizontal.svg">
     </div>
     <div class="logo">
@@ -15,15 +15,23 @@
       <li routerLink="contact" routerLinkActive="active">{{ 'navbar.contact' | translate }}</li>
     </ul>
     <div class="right-actions">
-      <div class="lang-selector mobile-hidden">
-        @if (currentLang === 'en') {
-          <img src="assets/images/icon-spain-flag.svg" (click)="setTransLanguage('es')">
+      <div class="lang-selector mobile-hidden" (click)="openLangDropdown = !openLangDropdown">
+        @if (currentLang === 'es') {
+          <img src="assets/images/icon-spain-flag.svg">
         }
 
-        @if (currentLang === 'es') {
-          <img src="assets/images/icon-en-flag.png" (click)="setTransLanguage('en')">
+        @if (currentLang === 'en') {
+          <img src="assets/images/icon-en-flag.png">
         }
       </div>
+      @if (openLangDropdown) {
+        <div class="lang-dropdown">
+          <ul>
+            <li (click)="setTransLanguage('es')" [ngClass]="{'active': currentLang === 'es'}">ES</li>
+            <li (click)="setTransLanguage('en')" [ngClass]="{'active': currentLang === 'en'}">EN</li>
+          </ul>
+        </div>
+      }
       <button class="btn light outline header-btn">{{ 'general.request_quote' | translate }}</button>
     </div>
   </div>
@@ -31,18 +39,26 @@
 
 @if (mobileMenuIsOpen) {
   <div class="mobile-menu-list desktop-hidden">
-    <div class="close-menu" (click)="mobileMenuIsOpen = false">
+    <div class="close-menu" (click)="toggleMobileMenu()">
       <img src="assets/images/icon-close-menu.svg">
     </div>
-    <div class="lang-selector">
-      @if (currentLang === 'en') {
-        <img src="assets/images/icon-spain-flag.svg" (click)="setTransLanguage('es')">
+    <div class="lang-selector" (click)="openLangDropdown = !openLangDropdown">
+      @if (currentLang === 'es') {
+        <img src="assets/images/icon-spain-flag.svg">
       }
 
-      @if (currentLang === 'es') {
-        <img src="assets/images/icon-en-flag.png" (click)="setTransLanguage('en')">
+      @if (currentLang === 'en') {
+        <img src="assets/images/icon-en-flag.png">
       }
     </div>
+    @if (openLangDropdown) {
+      <div class="lang-dropdown">
+        <ul>
+          <li (click)="setTransLanguage('es')" [ngClass]="{'active': currentLang === 'es'}">ES</li>
+          <li (click)="setTransLanguage('en')" [ngClass]="{'active': currentLang === 'en'}">EN</li>
+        </ul>
+      </div>
+    }
     <ul>
       <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'navbar.home' | translate }}</li>
       <li routerLink="services" routerLinkActive="active">{{ 'navbar.services' | translate }}</li>

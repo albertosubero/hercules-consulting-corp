@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { NavigationStart, Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -5,12 +6,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-nav-header',
   standalone: true,
-  imports: [RouterModule, TranslateModule],
+  imports: [RouterModule, TranslateModule, CommonModule],
   templateUrl: './nav-header.component.html',
   styleUrl: './nav-header.component.css'
 })
 export class NavHeaderComponent {
   mobileMenuIsOpen: boolean = false;
+  openLangDropdown: boolean = false;
   currentLang: string = '';
   
   public innerWidth: number = 0;
@@ -49,8 +51,18 @@ export class NavHeaderComponent {
   }
 
   setTransLanguage(lang: string){
-    this.translate.use(lang);
-    this.currentLang = lang;
+    this.translate.use(lang)
+    this.currentLang = lang
+    this.openLangDropdown = false
     localStorage.setItem('lang', lang)
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
+    if (this.mobileMenuIsOpen) {
+      window.onscroll = function () { window.scrollTo(0, 0); };
+    } else {
+      window.onscroll=function(){};
+    }
   }
 }
