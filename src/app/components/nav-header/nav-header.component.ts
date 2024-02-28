@@ -51,5 +51,6 @@ export class NavHeaderComponent {
   setTransLanguage(lang: string){
     this.translate.use(lang);
     this.currentLang = lang;
+    localStorage.setItem('lang', lang)
   }
 }

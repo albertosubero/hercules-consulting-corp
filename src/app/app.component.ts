@@ -24,8 +24,15 @@ export class AppComponent {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('en');
 
-    const browserLang: string = translate.getBrowserLang() || 'en';
-    translate.use(browserLang.match(/en|es/) ? browserLang : 'en');
+    const browserLang: string = translate.getBrowserLang()!;
+    const storageLang: string = localStorage.getItem('lang')!;
+
+    if (!storageLang) {
+      translate.use(browserLang.match(/en|es/) ? browserLang : 'en');
+      localStorage.setItem('lang', browserLang.match(/en|es/) ? browserLang : 'en')
+    } else {
+      translate.use(storageLang)
+    }
   }
 
   ngAfterViewInit() {
