@@ -63,7 +63,13 @@
     "phone": "Phone",
     "emails": "Emails",
     "privacy_policy": "Privacy Policy",
-    "terms_of_use": "Terms of Use"
+    "terms_of_use": "Terms of Use",
+    "services": "Services",
+    "services_text": "In the business world, each new team member is a strategic investment. At HERCULES, we offer recruitment services that go beyond...",
+    "specialized_process": "Specialized Process",
+    "specialized_process_text": "Our specialized recruiting process focuses on understanding the unique needs of your company. From creating job profiles...",
+    "recruitment_successes": "Recruitment Successes",
+    "recruitment_successes_text": "We are proud of our track record of success in placing highly qualified professionals in key roles. We have contributed to the growth and success of various..."
   },
   "navbar": {
     "home": "Home",

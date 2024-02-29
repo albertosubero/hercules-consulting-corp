@@ -3,22 +3,22 @@ import { articleI } from "../../components/info-card/info-card.component";
 export const recruitmentData: articleI[] = [
   {
     id: 1,
-    title: 'Servicios',
-    content: 'En el mundo empresarial,cada nuevo miembro del equipo es una inversión estratégica. En HERCULES , ofrecemosservicios de reclutamiento que van más...',
+    title: 'general.services',
+    content: 'general.services_text',
     img: 'image-recruitment-card-001.png',
     url: ''
   },
   {
     id: 2,
-    title: 'Proceso Especializado',
-    content: 'Nuestro proceso dereclutamiento especializado se centra en comprender las necesidades únicas detu empresa. Desde la creación de perfiles de trabajo...',
+    title: 'general.specialized_process',
+    content: 'general.specialized_process_text',
     img: 'image-recruitment-card-002.png',
     url: ''
   },
   {
     id: 3,
-    title: 'Éxitos en Reclutamiento',
-    content: 'Nos enorgullecenuestro historial de éxito en la colocación de profesionales altamentecalificados en roles clave. Hemos contribuido al crecimiento y éxito dediversas...',
+    title: 'general.recruitment_successes',
+    content: 'general.recruitment_successes_text',
     img: 'image-recruitment-card-003.png',
     url: ''
   }

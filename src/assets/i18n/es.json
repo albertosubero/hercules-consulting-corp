@@ -63,7 +63,13 @@
     "phone": "Teléfono",
     "emails": "Correos Electrónicos",
     "privacy_policy": "Política de Privacidad",
-    "terms_of_use": "Términos de Uso"
+    "terms_of_use": "Términos de Uso",
+    "services": "Servicios",
+    "services_text": "En el mundo empresarial,cada nuevo miembro del equipo es una inversión estratégica. En HERCULES , ofrecemosservicios de reclutamiento que van más...",
+    "specialized_process": "Proceso Especializado",
+    "specialized_process_text": "Nuestro proceso dereclutamiento especializado se centra en comprender las necesidades únicas detu empresa. Desde la creación de perfiles de trabajo...",
+    "recruitment_successes": "Éxitos en Reclutamiento",
+    "recruitment_successes_text": "Nos enorgullecenuestro historial de éxito en la colocación de profesionales altamentecalificados en roles clave. Hemos contribuido al crecimiento y éxito dediversas..."
   },
   "navbar": {
     "home": "Inicio",
