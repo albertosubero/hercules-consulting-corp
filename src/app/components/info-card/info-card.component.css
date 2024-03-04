@@ -46,15 +46,5 @@
       font-size: 18px;
       font-weight: 300;
     }
-    .see-more  {
-      display: flex;
-      color: #232647;
-      margin-top: 12px;
-      cursor: pointer;
-      justify-content: center;
-      img {
-        margin: 0 0 0 12px;
-      }
-    }
   }
 }

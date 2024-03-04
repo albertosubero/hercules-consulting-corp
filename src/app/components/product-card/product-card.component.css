@@ -28,5 +28,11 @@
       font-weight: 300;
       margin-bottom: 27px;
     }
+    button {
+      &:hover {
+        background-color: #04E3FF ;
+        color: #ffffff !important;
+      }
+    }
   }
 }

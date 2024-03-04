@@ -108,14 +108,24 @@ button {
   font-family: inherit;
   border: none;
   height: 58px;
+  transition: ease all .3s;
   &.btn {
     &.accent {
       background-color: #04E3FF;
       color: #001429;
+      &:hover {
+        background-color: #001429;
+        color: #ffffff;
+      }
     }
     &.light-fill {
+      border: 1px solid;
       background-color: #ffffff;
       color: #001429;
+      &:hover {
+        background-color: transparent;
+        color: #ffffff;
+      }
     }
     &.light {
       color: #ffffff;
@@ -123,6 +133,10 @@ button {
     &.outline {
       background-color: transparent;
       border: 1px solid;
+      &:hover {
+        background-color: #ffffff;
+        color: #001429;
+      }
     }
   }
   &.lg-btn {
@@ -151,6 +165,21 @@ button {
     height: 46px;
     width: 224px;
     border-radius: 224px;
+  }
+}
+
+.see-more  {
+  display: flex;
+  color: #232647;
+  margin-top: 12px;
+  cursor: pointer;
+  justify-content: center;
+  transition: ease all .3s;
+  img {
+    margin: 0 0 0 12px;
+  }
+  &:hover {
+    font-weight: 600;
   }
 }
 
