@@ -7,11 +7,12 @@ import { recruitmentData } from '../../utils/content/recruitment';
 import { reviewsVideosData } from '../../utils/content/reviews-videos';
 import { TranslateModule } from '@ngx-translate/core';
 import { CountUpNumbersDirective } from '../../utils/directives/count-up-numbers.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-services-view',
   standalone: true,
-  imports: [InfoCardComponent, ProductCardComponent, SafePipe, TranslateModule, CountUpNumbersDirective],
+  imports: [InfoCardComponent, RouterModule, ProductCardComponent, SafePipe, TranslateModule, CountUpNumbersDirective],
   templateUrl: './services-view.component.html',
   styleUrl: './services-view.component.css'
 })

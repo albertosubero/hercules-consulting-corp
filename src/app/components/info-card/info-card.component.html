@@ -5,11 +5,11 @@
         <img class="card-img" width="100%" height="auto" [src]="'assets/images/' + card.img">
         <div class="card-info text-center">
           <p class="title">{{ card.title | translate }}</p>
-          <p>{{ card.content | translate }}</p>
-          <div class="see-more">
+          <p class="p-content" [innerHTML]="card.content | translate"></p>
+          <!-- <div class="see-more">
             {{ 'general.see_more' | translate }}
             <img class="auto-img seemore-icon" src="assets/images/icon-next-arrow.svg">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

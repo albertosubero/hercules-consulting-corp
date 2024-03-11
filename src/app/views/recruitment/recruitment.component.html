@@ -9,26 +9,60 @@
     </div>
     <div class="half-col d-flex" data-aos="fade" data-aos-delay="1500">
       <h1 [innerHTML]="'general.recruitment_title' | translate"></h1>
-      <p style="max-width: 480px;">Lorem Ipsum is simply dummy text of  printing the typesetting industry Lorem Ipsum.</p>
-      <button class="btn accent lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
+      <p style="max-width: 480px;">{{ 'general.text_8' | translate }}</p>
+      <button routerLink="contact" class="btn accent lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
     </div>
   </div>
 </section>
 <!-- #Section 01 -->
-<section id="section-01" class="image-parallax-card" style="background-image: url('assets/images/image-parallax-recruitment.png')">
+<section id="section-01" class="dark">
+  <br><br>
+  <div class="container text-center" data-aos="fade"  data-aos-delay="600">
+    <h2 [innerHTML]="'general.our_methodologies' | translate" style="width: 100%;"></h2>
+  </div>
+  <div class="container text-center" data-aos="fade"  data-aos-delay="600">
+    <p style="max-width: 600px; margin: 2rem auto;">{{ 'general.our_methodologies_text' | translate }}</p>
+  </div>
   <div class="content" data-aos="fade-down" data-aos-delay="600">
-    <h2 [innerHTML]="'general.our_methodologies' | translate"></h2>
-    <p>{{ 'general.our_methodologies_text' | translate }}</p>
-    <span class="icon-link">
-      <img src="assets/images/icon-accent-circle-arrow.svg">
-      <i>lorem ipsum is simply dummy </i>
-    </span>
+    <div id="company-values-carousel" class="container carousel-wrapper" style="display: block;">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="200">
+            <img class="auto-img" src="assets/images/image-fortalezas.png">
+            <h2>{{ 'general.text_9' | translate }}</h2>
+            <p>{{ 'general.text_13' | translate }}</p>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="500">
+            <img class="auto-img" src="assets/images/image-valores.png">
+            <h2>{{ 'general.text_10' | translate }}</h2>
+            <p>{{ 'general.text_14' | translate }}</p>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="800">
+            <img class="auto-img" src="assets/images/image-expertise-clave.png">
+            <h2>{{ 'general.text_11' | translate }}</h2>
+            <p>{{ 'general.text_15' | translate }}</p>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="800">
+            <img class="auto-img" src="assets/images/image-expertise-clave.png">
+            <h2>{{ 'general.text_12' | translate }}</h2>
+            <p>{{ 'general.text_16' | translate }}</p>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+      <button routerLink="careers" class="btn accent md-btn" style="margin: 2rem auto;">{{ 'navbar.about_us' | translate}}</button>
+    </div>
   </div>
 </section>
 <!-- #Section 02 -->
 <section id="section-02">
   <div id="company-training" class="container" data-aos="fade" data-aos-delay="600">
-    <h2 class="section-title" [innerHTML]="'general.our_recruitment_title' | translate"></h2>
+    <h2 class="section-title text-center" [innerHTML]="'general.our_recruitment_title' | translate" style="max-width: 800px;"></h2>
   </div>
   <app-info-card [data]="recruitmentData" />
 </section>
@@ -40,7 +74,23 @@
       <p style="max-width: 500px;">{{ 'general.our_explanation_text' | translate }}</p>
       <span class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
-        <i>lorem ipsum is simply dummy text printing</i>
+        <i [innerHTML]="'general.text_3' | translate"></i>
+      </span>
+      <span class="icon-link">
+        <img src="assets/images/icon-accent-circle-arrow.svg">
+        <i [innerHTML]="'general.text_4' | translate"></i>
+      </span>
+      <span class="icon-link">
+        <img src="assets/images/icon-accent-circle-arrow.svg">
+        <i [innerHTML]="'general.text_5' | translate"></i>
+      </span>
+      <span class="icon-link">
+        <img src="assets/images/icon-accent-circle-arrow.svg">
+        <i [innerHTML]="'general.text_6' | translate"></i>
+      </span>
+      <span class="icon-link">
+        <img src="assets/images/icon-accent-circle-arrow.svg">
+        <i [innerHTML]="'general.text_7' | translate"></i>
       </span>
     </div>
     <div class="half-col">

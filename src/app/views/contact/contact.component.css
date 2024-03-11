@@ -1,9 +1,10 @@
 #section-01 {
+  min-height: 800px !important;
   &::before {
     background: linear-gradient(0deg, #081B30 0%, rgba(29, 52, 75, 0.5) 100%);
   }
   @media (max-width: 576px) {
-    min-height: 800px !important;
+    min-height: 1200px !important;
   }
 }
 

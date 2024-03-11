@@ -6,8 +6,8 @@
   <div class="container row">
     <div class="half-col d-flex" data-aos="fade" data-aos-delay="1500">
       <h1 [innerHTML]="'general.careers_title' | translate"></h1>
-      <p style="max-width: 480px;">Lorem Ipsum is simply dummy text of  printing typesetting industry Lorem Ipsum.</p>
-      <button class="btn light-fill lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
+      <p style="max-width: 480px;">{{ 'general.about_us_text' | translate }}</p>
+      <button routerLink="contact" class="btn light-fill lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
     </div>
     <div class="half-col" data-aos="fade-left" data-aos-delay="2000">
       <img width="100%" height="auto" src="assets/images/services-section-001.png">
@@ -57,9 +57,13 @@
         </div>
         <div class="half-col input-wrapper">
           <label for="">{{ 'forms.option_to_apply' | translate }}<span>*</span></label>
-          <input type="text">
+          <input type="file" id="file" name="file" />
         </div>
       </div>
+      <br>
+      <br>
+      <input type="checkbox" id="terms" value="false" />
+      <label for="terms">{{ 'forms.terms' | translate }}</label>
       <div class="container form-actions" style="justify-content: center;">
         <button class="btn accent lg-btn" style="width: 244px;">{{ 'general.postulate' | translate }}</button>
         <p [innerHTML]="'forms.client_login_text' | translate"></p>
@@ -71,12 +75,12 @@
 <section id="section-03" class="light">
   <div class="container row">
     <div class="half-col d-flex" data-aos="fade-right" data-aos-delay="600">
-      <h2 style="max-width: 575px;">Lorem Ipsum is simply duy text of the printing <span class="accent-color">and typesetting industry.</span></h2>
-      <p class="p-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.</p>
-      <span class="icon-link">
+      <!-- <h2 style="max-width: 575px;">Lorem Ipsum is simply duy text of the printing <span class="accent-color">and typesetting industry.</span></h2> -->
+      <p class="p-md" [innerHTML]="'general.about_us_text_1' | translate"></p>
+      <!-- <span class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
         <i>{{ 'general.see_more' | translate }}</i>
-      </span>
+      </span> -->
     </div>
     <div class="half-col" data-aos="fade-left" data-aos-delay="600">
       <img width="100%" height="auto" src="assets/images/services-section-one-005-image.png">

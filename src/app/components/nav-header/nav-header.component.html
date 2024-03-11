@@ -8,11 +8,11 @@
     </div>
     <ul class="top-menu mobile-hidden">
       <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'navbar.home' | translate }}</li>
-      <li routerLink="services" routerLinkActive="active">{{ 'navbar.services' | translate }}</li>
-      <li routerLink="training" routerLinkActive="active">{{ 'navbar.training' | translate }}</li>
-      <li routerLink="recruitment" routerLinkActive="active">{{ 'navbar.recruitment' | translate }}</li>
       <li routerLink="careers" routerLinkActive="active">{{ 'navbar.about_us' | translate }}</li>
-      <li routerLink="contact" routerLinkActive="active">{{ 'navbar.contact' | translate }}</li>
+      <li routerLink="services" routerLinkActive="active">{{ 'navbar.services' | translate }}</li>
+      <li routerLink="recruitment" routerLinkActive="active">{{ 'navbar.recruitment' | translate }}</li>
+      <li routerLink="training" routerLinkActive="active">{{ 'navbar.training' | translate }}</li>
+      <!-- <li routerLink="contact" routerLinkActive="active">{{ 'navbar.contact' | translate }}</li> -->
     </ul>
     <div class="right-actions">
       <div class="lang-selector mobile-hidden" (click)="openLangDropdown = !openLangDropdown">
@@ -32,7 +32,7 @@
           </ul>
         </div>
       }
-      <button class="btn light outline header-btn">{{ 'general.request_quote' | translate }}</button>
+      <button routerLink="contact" class="btn light outline header-btn">{{ 'general.request_quote' | translate }}</button>
     </div>
   </div>
 </nav>
@@ -68,7 +68,7 @@
       <li routerLink="contact" routerLinkActive="active">{{ 'navbar.contact' | translate }}</li>
     </ul>
     <div class="right-actions text-center">
-      <button class="btn light outline header-btn">{{ 'general.request_quote' | translate }}</button>
+      <button routerLink="contact" class="btn light outline header-btn">{{ 'general.request_quote' | translate }}</button>
     </div>
   </div>
 }

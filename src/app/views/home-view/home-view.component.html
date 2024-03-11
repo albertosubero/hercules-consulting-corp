@@ -7,7 +7,7 @@
     <div class="half-col d-flex" data-aos="fade" data-aos-delay="1500">
       <h1 [innerHTML]="'general.we_enhance_talent' | translate"></h1>
       <p style="max-width: 480px;">{{ 'general.building_teams' | translate }}</p>
-      <button class="btn accent lg-btn">{{ 'general.schedule_consultation' | translate }}</button>
+      <button class="btn accent lg-btn" routerLink="contact">{{ 'general.schedule_consultation' | translate }}</button>
     </div>
     <div class="half-col" data-aos="fade-left" data-aos-delay="2000">
       <img width="100%" height="auto" src="assets/images/home-section-one-potenciamos-talento-image.png">
@@ -23,9 +23,17 @@
     <div class="half-col d-flex" data-aos="fade-left" data-aos-delay="600">
       <h2 style="max-width: 575px;">{{ 'general.discover_how_our_training' | translate }}</h2>
       <p>{{ 'general.explore_our_services' | translate }}</p>
-      <span class="icon-link">
+      <span routerLink="services" class="icon-link">
         <img src="assets/images/icon-accent-circle-arrow.svg">
-        <i>{{ 'general.explore_our_services2' | translate }}</i>
+        <i>{{ 'navbar.services' | translate }}</i>
+      </span>
+      <span routerLink="recruitment" class="icon-link">
+        <img src="assets/images/icon-accent-circle-arrow.svg">
+        <i>{{ 'navbar.recruitment' | translate }}</i>
+      </span>
+      <span routerLink="training" class="icon-link">
+        <img src="assets/images/icon-accent-circle-arrow.svg">
+        <i>{{ 'navbar.training' | translate }}</i>
       </span>
     </div>
   </div>
@@ -38,27 +46,28 @@
   <div id="company-values-carousel" class="container carousel-wrapper" style="display: block;">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
-        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+        <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="200">
           <img class="auto-img" src="assets/images/image-fortalezas.png">
           <h2>{{ 'general.strengths' | translate }}</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.</p>
+          <p>{{ 'general.strengths_text' | translate }}</p>
         </div>
       </ng-template>
       <ng-template carouselSlide>
-        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="500">
+        <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="500">
           <img class="auto-img" src="assets/images/image-valores.png">
           <h2>{{ 'general.values' | translate }}</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.</p>
+          <p>{{ 'general.values_text' | translate }}</p>
         </div>
       </ng-template>
       <ng-template carouselSlide>
-        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="800">
+        <div class="carousel-slide-wrapper dynamic_box" data-aos="fade-down" data-aos-delay="800">
           <img class="auto-img" src="assets/images/image-expertise-clave.png">
           <h2>{{ 'general.key_expertise' | translate }}</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and the in typesetting industry.</p>
+          <p>{{ 'general.key_expertise_text' | translate }}</p>
         </div>
       </ng-template>
     </owl-carousel-o>
+    <button routerLink="careers" class="btn accent md-btn" style="margin: 2rem auto;">{{ 'navbar.about_us' | translate}}</button>
   </div>
 </section>
 <!-- #Section 02 -->
@@ -117,14 +126,12 @@
   </div>
 </section>
 <!-- #Section 04 -->
-<section id="section-04">
+<!-- <section id="section-04">
   <div id="company-articles" class="container" data-aos="fade"  data-aos-delay="600">
     <h2 [innerHTML]="'general.projects_led_title' | translate"></h2>
   </div>
   <div id="company-articles-carousel" class="container carousel-wrapper" style="display: block;">
     <app-article-card />
   </div>
-  <!-- hr-separator -->
   <img class="hr-separator" width="100%" height="auto" src="assets/images/hr-separator.svg">
-  <!-- hr-separator -->
-</section>
+</section> -->

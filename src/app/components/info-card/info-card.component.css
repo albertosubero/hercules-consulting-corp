@@ -1,5 +1,5 @@
 .container {
-  align-items: start;
+  align-items: stretch;
   @media (min-width: 992px) {
     gap: 20px;
   }
@@ -12,7 +12,11 @@
 .card-wrapper {
   width: 100%;
   max-width: 410px;
+  height: 100%;
   margin: 0 auto 40px auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
   @media (min-width: 992px) and (max-width: 1250px) {
     max-width: 310px;
   }
@@ -25,6 +29,7 @@
     border-radius: 0px 0px 14px 14px;
     padding: 34px;
     margin-top: -5px;
+    height: 100%;
     .title {
       font-size: 28px;
       min-height: 115px;
@@ -42,9 +47,10 @@
         background-color: #04E3FF;
       }
     }
-    p {
+    .p-content {
       font-size: 18px;
       font-weight: 300;
+      text-align: left;
     }
   }
 }
