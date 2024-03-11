@@ -548,3 +548,9 @@ a  {
     align-items: center;
   }
 }
+
+#logosCarousel {
+  .carousel-slide-wrapper {
+    padding: 10px;
+  }
+}

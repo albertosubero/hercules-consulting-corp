@@ -19,7 +19,7 @@ export class HomeViewComponent {
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 500,
     navText: ['', ''],
     responsive: {
       0: {
@@ -32,6 +32,28 @@ export class HomeViewComponent {
         items: 4
       },
     },
+    nav: true
+  }
+  logosCarousel: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      992: {
+        items: 6
+      },
+    },
+    autoplay: true,
     nav: true
   }
 }

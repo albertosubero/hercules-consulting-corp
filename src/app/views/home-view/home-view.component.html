@@ -75,8 +75,89 @@
   <div id="company-testimonials" class="container gradient-dark-card" data-aos="fade"  data-aos-delay="600">
     <h2 [innerHTML]="'general.our_clients_title' | translate"></h2>
   </div>
-  <div id="company-testimonials-carousel" class="container carousel-wrapper" style="display: block;">
-    <app-testimonials-carousel />
+  <div id="logosCarousel" class="container carousel-wrapper" style="display: block;">
+    <owl-carousel-o [options]="logosCarousel">
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/aldro.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/bt.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/cda.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/cos.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/eni.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/kantar.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/lpsos.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/luz_madrid.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/ono.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/orange.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/sanitas.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/sermicro.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/telefonica.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/verne.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/vodafone.png">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="carousel-slide-wrapper" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/images/logos/zelenda.png">
+        </div>
+      </ng-template>
+    </owl-carousel-o>
   </div>
   <!-- hr-separator -->
   <img class="hr-separator" width="100%" height="auto" src="assets/images/hr-separator.svg">
