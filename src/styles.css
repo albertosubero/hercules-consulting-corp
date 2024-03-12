@@ -237,7 +237,6 @@ a  {
 
 .icon-link {
   color: #04E3FF;
-  cursor: pointer;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -523,14 +522,13 @@ a  {
 }
 
 .dynamic_box {
-  &:hover {
+  /* &:hover {
     p {
       height: 160px;
     }
-  }
+  } */
   p {
     font-size: 16px;
-    height: 0;
     transition: all ease .5s;
   }
 }

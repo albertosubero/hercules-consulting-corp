@@ -1,47 +1,6 @@
 <!-- router-trasitions -->
 <div class="trasition-wrapper"></div>
 <div class="trasition-wrapper second-layer"></div>
-<!-- #Section 01 -->
-<section id="section-01" class="image-parallax-card" style="background-image: url('assets/images/image-parallax-contact-form.png');">
-  <div class="content">
-    <div class="container text-center" style="display: block;" data-aos="fade-down" data-aos-delay="1500">
-      <h2 class="md" [innerHTML]="'general.contact_title' | translate"></h2>
-      <!-- <p class="md" style="max-width: 490px; font-size: 16px;">Lorem Ipsum is simply dummy text printing typesetting industry lorem Ipsum has been the industry's.</p> -->
-    </div>
-    <div class="form-wrapper" style="max-width: 450px;" data-aos="fade-down" data-aos-delay="2000">
-      <div class="container" style="flex-direction: column;">
-        <div class="input-wrapper">
-          <label for="">{{ 'forms.phone_number' | translate }}<span>*</span></label>
-          <input type="text">
-        </div>
-        <div class="input-wrapper">
-          <label for="">{{ 'forms.email_long' | translate }}<span>*</span></label>
-          <input type="text">
-        </div>
-        <div class="input-wrapper">
-          <label for="">{{ 'forms.email_long' | translate }}<span>*</span></label>
-          <textarea class="input-wrapper" name="" id="" cols="30" rows="10"></textarea>
-        </div>
-      </div>
-      <div class="container form-actions" style="justify-content: center;">
-        <button class="btn accent lg-btn" style="width: 244px;">{{ 'forms.send' | translate }}</button>
-      </div>
-    </div>
-    <div class="contact-flex" data-aos="fade-up" data-aos-delay="2500">
-      <div class="contact-wrapper">
-        <img src="assets/images/icon-maps-pin.svg">
-        {{ 'general.address' | translate }}:  
-        <span>Lorem Ipsum is simply dummy.</span>
-      </div>
-      <div class="separator"></div>
-      <div class="contact-wrapper">
-        <img src="assets/images/icon-customer-service.svg">
-        {{ 'general.attention_schedule' | translate }}:  
-        <span>{{ 'general.attention_days' | translate }}</span>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- #Section 02 -->
 <section id="section-02" class="light">
   <div class="container row">
@@ -83,5 +42,46 @@
   </div>
   <div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="600">
     <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">{{ 'general.see_more_reviews' | translate }}</button>
+  </div>
+</section>
+<!-- #Section 01 -->
+<section id="section-01" class="image-parallax-card" style="background-image: url('assets/images/image-parallax-contact-form.png');">
+  <div class="content">
+    <div class="container text-center" style="display: block;" data-aos="fade-down" data-aos-delay="1500">
+      <h2 class="md" [innerHTML]="'general.contact_title' | translate"></h2>
+      <!-- <p class="md" style="max-width: 490px; font-size: 16px;">Lorem Ipsum is simply dummy text printing typesetting industry lorem Ipsum has been the industry's.</p> -->
+    </div>
+    <div class="form-wrapper" style="max-width: 450px;" data-aos="fade-down" data-aos-delay="2000">
+      <div class="container" style="flex-direction: column;">
+        <div class="input-wrapper">
+          <label for="">{{ 'forms.phone_number' | translate }}<span>*</span></label>
+          <input type="text">
+        </div>
+        <div class="input-wrapper">
+          <label for="">{{ 'forms.email_long' | translate }}<span>*</span></label>
+          <input type="text">
+        </div>
+        <div class="input-wrapper">
+          <label for="">{{ 'forms.email_long' | translate }}<span>*</span></label>
+          <textarea class="input-wrapper" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="container form-actions" style="justify-content: center;">
+        <button class="btn accent lg-btn" style="width: 244px;">{{ 'forms.send' | translate }}</button>
+      </div>
+    </div>
+    <div class="contact-flex" data-aos="fade-up" data-aos-delay="2500">
+      <div class="contact-wrapper">
+        <img src="assets/images/icon-maps-pin.svg">
+        {{ 'general.address' | translate }}:  
+        <span>Lorem Ipsum is simply dummy.</span>
+      </div>
+      <div class="separator"></div>
+      <div class="contact-wrapper">
+        <img src="assets/images/icon-customer-service.svg">
+        {{ 'general.attention_schedule' | translate }}:  
+        <span>{{ 'general.attention_days' | translate }}</span>
+      </div>
+    </div>
   </div>
 </section>
