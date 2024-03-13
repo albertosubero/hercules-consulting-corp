@@ -136,15 +136,15 @@
     <div class="half-col d-flex l-content" data-aos="fade-left" data-aos-delay="600">
       <h2 style="max-width: 575px;" [innerHTML]="'general.success_metrics' | translate"></h2>
       <p style="max-width: 500px;">{{ 'general.success_metrics_text' | translate }}</p>
-      <span class="icon-link">
+      <span routerLink="../contact" class="icon-link" style="cursor: pointer;">
         <img src="assets/images/icon-accent-circle-arrow.svg">
-        <i>lorem ipsum is simply dummy text printing</i>
+        <i>{{ 'general.button_1' | translate }}</i>
       </span>
     </div>
   </div>
 </section>
 <!-- #Section 06 -->
-<section id="section-06" class="light gray">
+<!-- <section id="section-06" class="light gray">
   <div id="company-clients-videos" class="container" data-aos="fade" data-aos-delay="600">
     <h2 class="section-title" [innerHTML]="'general.our_clients_say_title' | translate"></h2>
   </div>
@@ -158,4 +158,4 @@
   <div class="container" style="justify-content: center;" data-aos="fade" data-aos-delay="600">
     <button class="btn accent lg-btn" style="margin: 20px 0;" (click)="videosLimit < reviewsVideosData.length ? videosLimit = videosLimit + 4 : videosLimit = reviewsVideosData.length">{{ 'general.see_more_reviews' | translate }}</button>
   </div>
-</section>
+</section> -->
